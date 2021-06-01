@@ -1,0 +1,45 @@
+/* ***************************************** */
+/* ? ***************** root ***************** */
+/* ***************************************** */
+:root {
+   /* ### Primary */
+
+   --Cyan: hsl(179, 62%, 43%);
+   --Bright-Yellow: hsl(71, 73%, 54%);
+
+   /* ### Neutral */
+
+   --Light-Gray: hsl(204, 43%, 93%);
+   --Grayish-Blue: hsl(218, 22%, 67%);
+
+   font-size: 16px;
+
+   font-family: "Karla", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+   box-sizing: content-box;
+}
+
+/* ***************************************** */
+/* ? ***************** body ***************** */
+/* ***************************************** */
+
+html,
+body {
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+}
+
+/* ***************************************** */
+/* ? **************** main ***************** */
+/* ***************************************** */
+main {
+   /* border: 2px dotted black; */
+}
