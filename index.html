@@ -12,6 +12,13 @@
          sizes="32x32"
          href="./images/favicon-32x32.png"
       />
+
+      <!-- ? Google Fonts -->
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,200;0,600;0,700;1,300&display=swap"
+         rel="stylesheet"
+      />
       <!-- ? Normailze css -->
       <link
          rel="stylesheet"
@@ -33,15 +40,53 @@
       <title>Frontend Mentor | Ping coming soon page</title>
    </head>
    <body>
-      <header class="--section header">Header</header>
-      <main class="--section main">Main</main>
-      <footer class="--section footer">Footer</footer>
-      <!-- We are launching soon!
-
-  Subscribe and get notified
-
-  Notify Me
-
-  &copy; Copyright Ping. All rights reserved. -->
+      <header class="--section header">
+         <div class="--section-head">
+            <h1>
+               We are launching
+               <strong>soon!</strong>
+            </h1>
+            <p>Subscribe and get notified</p>
+         </div>
+         <h2>PING.</h2>
+         <form class="form">
+            <div class="form-control">
+               <input
+                  class="form-input input"
+                  type="text"
+                  placeholder="Your email Adress..."
+                  value="example/email.com"
+               />
+               <p class="error">
+                  please provide a valid email address
+               </p>
+            </div>
+            <input
+               class="form-input btn"
+               type="button"
+               value="Notify Me"
+            />
+         </form>
+      </header>
+      <main class="--section main">
+         <div class="image">
+            <img
+               src="./images/illustration-dashboard.png"
+               alt=""
+            />
+         </div>
+      </main>
+      <footer class="--section footer">
+         <div class="box-footer">
+            <div class="icons">
+               <i class="fab fa-facebook"></i>
+               <i class="fab fa-twitter-square"></i>
+               <i class="fab fa-instagram"></i>
+            </div>
+            <p class="cotyright">
+               &copy; Copyright Ping. All rights reserved.
+            </p>
+         </div>
+      </footer>
    </body>
 </html>

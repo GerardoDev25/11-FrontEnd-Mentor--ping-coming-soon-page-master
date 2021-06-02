@@ -2,19 +2,15 @@
 /* ? ***************** root ***************** */
 /* ***************************************** */
 :root {
-   /* ### Primary */
+   --Blue: hsl(223, 87%, 63%);
+   --Pale-Blue: hsl(223, 100%, 88%);
+   --Light-Red: hsl(354, 100%, 66%);
+   --Gray: hsl(0, 0%, 59%);
+   --Very-Dark-Blue: hsl(209, 33%, 12%);
 
-   --Cyan: hsl(179, 62%, 43%);
-   --Bright-Yellow: hsl(71, 73%, 54%);
-
-   /* ### Neutral */
-
-   --Light-Gray: hsl(204, 43%, 93%);
-   --Grayish-Blue: hsl(218, 22%, 67%);
-
-   font-size: 16px;
-
-   font-family: "Karla", sans-serif;
+   font-size: 20px;
+   font-family: "Libre Franklin", sans-serif;
+   box-sizing: content-box;
 }
 
 *,
@@ -29,17 +25,157 @@
 
 html,
 body {
+    overflow-x: hidden;
    width: 100vw;
-   height: 100vh;
+   height: 120vh;
+   min-height: 812px;
    display: flex;
    flex-direction: column;
    justify-content: space-between;
    align-items: center;
 }
 
+h1,
+h2,
+p,
+strong {
+   margin: 0;
+   padding: 0;
+}
+
+.--section {
+    
+   width: calc(100% - 6rem);
+   /* todo maxwi  */
+   max-width: 10rem;
+   min-width: 355px;
+}
+
 /* ***************************************** */
-/* ? **************** main ***************** */
+/* ? *************** Header **************** */
 /* ***************************************** */
-main {
-   /* border: 2px dotted black; */
+.header {
+   margin-top: 2rem;
+   display: grid;
+   grid-template-rows: 28% 27% 45%;
+   height: calc(45% - 2rem);
+   text-align: center;
+}
+
+.header h2,
+.header h1 {
+   font-size: 1.3rem;
+}
+.header h1 {
+   color: var(--Gray);
+   font-weight: 300;
+   padding-bottom: 1rem;
+}
+
+.--section-head p {
+   font-size: 0.7rem;
+   font-weight: 600;
+   color: black;
+}
+
+.header strong {
+   color: black;
+   font-weight: 700;
+}
+.header h2 {
+   order: -1;
+   padding: 2rem 0;
+}
+
+.form {
+   display: grid;
+   grid-template-rows: 60% 40%;
+}
+
+.form-control {
+   margin: 0 auto;
+   width: 90%;
+}
+
+.form-control p {
+   color: red;
+   padding-top: 0.2rem;
+   font-size: 0.7rem;
+}
+
+.form-input {
+   padding: 0;
+   border: 0;
+   width: 100%;
+   height: 2.2rem;
+   border-radius: 1.4rem;
+}
+.input {
+   border: 2px solid var(--Pale-Blue);
+   outline: none;
+
+}
+
+.input::placeholder {
+   font-size: 0.8rem;
+   padding-left: 1rem;
+   color: var(--Pale-Blue);
+}
+.input:hover {
+   outline: none;
+}
+
+.btn {
+   margin: 0 auto;
+   width: 90%;
+   background-color: var(--Blue);
+   color: white;
+   font-size: 0.8rem;
+   font-weight: 600;
+}
+
+/* ***************************************** */
+/* ? *************** main **************** */
+/* ***************************************** */
+
+.main {
+   height: calc(35% - 2rem);
+}
+
+.image {
+   width: 100%;
+   height: 100%;
+}
+.image img {
+   max-width: 100%;
+}
+
+/* ***************************************** */
+/* ? *************** footer **************** */
+/* ***************************************** */
+
+.footer {
+   height: calc(25% - 4rem);
+}
+
+.box-footer {
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-around;
+}
+
+.icons {
+   display: flex;
+   justify-content: space-around;
+   width: 60%;
+}
+.icons i {
+   color: var(--Blue);
+}
+
+.cotyright{
+    font-size: .7rem;
+    color: var(--Very-Dark-Blue);
 }
