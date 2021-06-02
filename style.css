@@ -43,9 +43,11 @@ strong {
    padding: 0;
 }
 
+.error{
+    display: none;
+}
 .--section {
    width: calc(100% - 6rem);
-   /* todo maxwi  */
    max-width: 10rem;
    min-width: 355px;
 }
@@ -194,7 +196,7 @@ strong {
 
    .--section {
       /* border: 3px dotted black; */
-      max-width: 30rem;
+      max-width: 27rem;
    }
 
    /* ***************************************** */
@@ -207,7 +209,7 @@ strong {
    }
    .form {
       display: grid;
-      grid-template-columns: 60% 40%;
+      grid-template-columns: 65% 35%;
    }
 
    .form-input {
